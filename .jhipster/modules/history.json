@@ -107,5 +107,17 @@
       "configurationFormat" : "yaml",
       "indentSize" : 2
     }
+  }, {
+    "module" : "custom-jhlite",
+    "date" : "2024-01-12T13:55:07.647702745Z",
+    "properties" : {
+      "packageName" : "com.mycompany.myapp",
+      "projectName" : "JHipster Sample Application",
+      "baseName" : "jhipsterSampleApplication",
+      "serverPort" : 8080,
+      "endOfLine" : "lf",
+      "configurationFormat" : "yaml",
+      "indentSize" : 2
+    }
   } ]
 }
