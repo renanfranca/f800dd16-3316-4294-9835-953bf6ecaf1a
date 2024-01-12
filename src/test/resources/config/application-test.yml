@@ -6,7 +6,7 @@ logging:
   config: classpath:logback.xml
 spring:
   main:
-    banner-mode: 'off'
     allow-bean-definition-overriding: true
+    banner-mode: 'off'
 server:
   port: 0
