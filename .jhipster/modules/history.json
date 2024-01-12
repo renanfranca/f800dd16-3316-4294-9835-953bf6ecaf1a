@@ -11,5 +11,17 @@
       "configurationFormat" : "yaml",
       "indentSize" : 2
     }
+  }, {
+    "module" : "maven-java",
+    "date" : "2024-01-12T12:16:33.586293537Z",
+    "properties" : {
+      "packageName" : "com.mycompany.myapp",
+      "projectName" : "JHipster Sample Application",
+      "baseName" : "jhipsterSampleApplication",
+      "serverPort" : 8080,
+      "endOfLine" : "lf",
+      "configurationFormat" : "yaml",
+      "indentSize" : 2
+    }
   } ]
 }
