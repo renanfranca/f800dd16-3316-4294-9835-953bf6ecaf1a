@@ -59,5 +59,17 @@
       "configurationFormat" : "yaml",
       "indentSize" : 2
     }
+  }, {
+    "module" : "init",
+    "date" : "2024-01-12T13:55:06.773803293Z",
+    "properties" : {
+      "packageName" : "com.mycompany.myapp",
+      "projectName" : "JHipster Sample Application",
+      "baseName" : "jhipsterSampleApplication",
+      "serverPort" : 8080,
+      "endOfLine" : "lf",
+      "configurationFormat" : "yaml",
+      "indentSize" : 2
+    }
   } ]
 }
