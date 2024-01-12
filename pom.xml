@@ -18,6 +18,8 @@
     <surefire-plugin.version>3.2.5</surefire-plugin.version>
     <maven-enforcer-plugin.version>3.4.1</maven-enforcer-plugin.version>
     <junit-jupiter.version>5.10.1</junit-jupiter.version>
+    <cucumber.version>7.15.0</cucumber.version>
+    <jhlite.version>1.1.0</jhlite.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <assertj.version>3.25.1</assertj.version>
     <failsafe-plugin.version>3.0.0-M5</failsafe-plugin.version>
@@ -48,12 +50,49 @@
       <artifactId>commons-lang3</artifactId>
     </dependency>
     <dependency>
+      <groupId>tech.jhipster.lite</groupId>
+      <artifactId>jhlite</artifactId>
+      <version>${jhlite.version}</version>
+    </dependency>
+    <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-junit-platform-engine</artifactId>
+      <version>${cucumber.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-java</artifactId>
+      <version>${cucumber.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-spring</artifactId>
+      <version>${cucumber.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.platform</groupId>
+      <artifactId>junit-platform-suite</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>tech.jhipster.lite</groupId>
+      <artifactId>jhlite</artifactId>
+      <version>${jhlite.version}</version>
+      <type>test-jar</type>
+      <classifier>tests</classifier>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
   <build>
+    <defaultGoal>spring-boot:run</defaultGoal>
     <resources>
       <resource>
         <filtering>true</filtering>
@@ -245,7 +284,6 @@
         <artifactId>spring-boot-maven-plugin</artifactId>
       </plugin>
     </plugins>
-    <defaultGoal>spring-boot:run</defaultGoal>
   </build>
   <profiles>
     <profile>
